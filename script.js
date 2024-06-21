@@ -49,7 +49,7 @@ const updateCart = () => {
   cartList.innerHTML = state.cart
     .map(
       (c) =>
-        `<li key="${c.id}">${c.name} - Rs.${c.price} - Quantity: <button onClick="removeCartHandler(${c.id})">Remove</button></li>`,
+        `<li key="${c.id}">${c.name} - Rs.${c.price} <button onClick="removeCartHandler(${c.id})">Remove</button></li>`,
     )
     .join("");
 
